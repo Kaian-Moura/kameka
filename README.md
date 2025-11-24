@@ -84,6 +84,29 @@ Para testar o build de produção localmente:
 npm run preview
 ```
 
+## 🚀 Deploy no GitHub Pages
+
+O projeto está configurado para deploy automático no GitHub Pages.
+
+### Configuração Inicial
+
+1. Acesse o repositório no GitHub
+2. Vá em **Settings** → **Pages**
+3. Em **Source**, selecione: **GitHub Actions**
+4. Faça push das suas alterações
+5. O GitHub Actions fará o build e deploy automaticamente
+
+Após o deploy, o jogo estará disponível em:
+```
+https://kaian-moura.github.io/kameka/
+```
+
+### Verificar o Deploy
+
+- Acompanhe o progresso na aba **Actions** do GitHub
+- Aguarde o workflow "Deploy to GitHub Pages" concluir
+- O jogo estará online em alguns minutos
+
 ## 🎯 Como Jogar
 
 1. **Splash Screen**: Clique em "Jogar" para começar

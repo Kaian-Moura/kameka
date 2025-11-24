@@ -11,8 +11,9 @@ class ChatScene extends Phaser.Scene {
 
   preload() {
     // Carregar assets necessários
-    this.load.image("jogo-fundo", "/assets/jogoFundo.png");
-    this.load.image("caseiro-avatar", "/assets/hud/caseiro.png");
+    const base = window.ASSETS_PATH || './assets/';
+    this.load.image("jogo-fundo", base + "jogoFundo.png");
+    this.load.image("caseiro-avatar", base + "hud/caseiro.png");
   }
 
   async create() {

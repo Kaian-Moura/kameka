@@ -10,11 +10,12 @@ class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("fazendaFundo", "/assets/jogoFundo.png");
-    this.load.image("hudCompleta", "/assets/hud/hudcompleta.png");
-    this.load.image("terra", "/assets/terra.png");
-    this.load.image("hudBaixo", "/assets/hud/hudbaixo.png");
-    this.load.image("alfacePlantio", "/assets/hud/alfacePlantio.png");
+    const base = window.ASSETS_PATH || './assets/';
+    this.load.image("fazendaFundo", base + "jogoFundo.png");
+    this.load.image("hudCompleta", base + "hud/hudcompleta.png");
+    this.load.image("terra", base + "terra.png");
+    this.load.image("hudBaixo", base + "hud/hudbaixo.png");
+    this.load.image("alfacePlantio", base + "hud/alfacePlantio.png");
   }
 
   create() {

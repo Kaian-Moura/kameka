@@ -42,10 +42,11 @@ class ShopScene extends Phaser.Scene {
 
   preload() {
     // Carrega os assets necessários
-    this.load.image("shopBackground", "/assets/jogoFundo.png");
-    this.load.image("alfacePlantio", "/assets/hud/alfacePlantio.png");
-    this.load.image("plantioFeijao", "/assets/feijao.png");
-    this.load.image("sementesEspeciais", "/assets/SEMENTES.png");
+    const base = window.ASSETS_PATH || './assets/';
+    this.load.image("shopBackground", base + "jogoFundo.png");
+    this.load.image("alfacePlantio", base + "hud/alfacePlantio.png");
+    this.load.image("plantioFeijao", base + "feijao.png");
+    this.load.image("sementesEspeciais", base + "SEMENTES.png");
   }
 
   create() {

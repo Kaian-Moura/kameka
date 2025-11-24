@@ -5,8 +5,9 @@ class SplashScene extends Phaser.Scene {
 
   preload() {
     // Carrega os assets
-    this.load.image("background", "/assets/fazenda fundo.png");
-    this.load.image("logo", "/assets/logo.png");
+    const base = window.ASSETS_PATH || './assets/';
+    this.load.image("background", base + "fazenda fundo.png");
+    this.load.image("logo", base + "logo.png");
   }
 
   create() {

@@ -100,6 +100,13 @@
 
     <!-- Scripts do jogo -->
     <script type="module">
+      // Define o caminho base dos assets
+      window.ASSETS_PATH = window.location.pathname.includes("/kameka/")
+        ? "/kameka/assets/"
+        : "./assets/";
+
+      console.log("📁 Assets path:", window.ASSETS_PATH);
+
       // Importa as cenas
       import SplashScene from "./src/scenes/SplashScene.js";
       import GameScene from "./src/scenes/GameScene.js";

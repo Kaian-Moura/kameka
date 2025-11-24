@@ -173,6 +173,12 @@ kameka/
 - 📈 **Análise de investimentos**
 - 💡 **Tomada de decisão financeira**
 
+ ## 🎥 Vídeo de Demonstração
+
+Assista ao vídeo demonstrativo do jogo:
+
+🔗 https://drive.google.com/drive/folders/1LU5iTXbA1DST3CHw1oTcyt-879XPq81k
+
 ## 🐛 Solução de Problemas
 
 ### Erro: "Cannot find module"

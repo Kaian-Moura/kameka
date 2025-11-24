@@ -1,20 +1,11 @@
 {
   "name": "kameka-poupazenda",
   "version": "1.0.0",
-  "description": "Jogo educativo de fazenda com IA para educação financeira",
-  "main": "src/main.js",
+  "description": "Jogo educativo de fazenda para educação financeira",
+  "main": "index.html",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@huggingface/inference": "^4.13.3",
-    "@huggingface/transformers": "^3.1.2",
-    "phaser": "^3.70.0"
-  },
-  "devDependencies": {
-    "vite": "^5.0.0"
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
   }
 }

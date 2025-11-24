@@ -42,7 +42,7 @@ class ShopScene extends Phaser.Scene {
 
   preload() {
     // Carrega os assets necessários
-    const base = window.ASSETS_PATH || './assets/';
+    const base = window.ASSETS_PATH || "./assets/";
     this.load.image("shopBackground", base + "jogoFundo.png");
     this.load.image("alfacePlantio", base + "hud/alfacePlantio.png");
     this.load.image("plantioFeijao", base + "feijao.png");

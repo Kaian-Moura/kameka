@@ -10,7 +10,7 @@ class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    const base = window.ASSETS_PATH || './assets/';
+    const base = window.ASSETS_PATH || "./assets/";
     this.load.image("fazendaFundo", base + "jogoFundo.png");
     this.load.image("hudCompleta", base + "hud/hudcompleta.png");
     this.load.image("terra", base + "terra.png");

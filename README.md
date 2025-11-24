@@ -107,21 +107,23 @@ Por padrão, o jogo funciona com **respostas mock inteligentes**. Para ativar a 
 3. Crie um novo token (tipo "read")
 4. Copie o token gerado
 
-### 2. Configurar o Token
+### 2. Configurar Variável de Ambiente (SEGURO ✅)
 
-Abra o arquivo `src/ai/caseiroAI.js` e substitua:
+Crie um arquivo `.env` na raiz do projeto:
 
-```javascript
-const HF_TOKEN = "COLE_SEU_TOKEN_AQUI";
+```bash
+cp .env.example .env
 ```
 
-Por:
+Edite o arquivo `.env` e adicione seu token:
 
-```javascript
-const HF_TOKEN = "seu_token_aqui";
+```env
+VITE_HF_TOKEN=seu_token_aqui
 ```
 
-**⚠️ IMPORTANTE**: Em produção, **NUNCA** coloque tokens diretamente no código. Use variáveis de ambiente ou backend.
+**✅ SEGURO**: O arquivo `.env` está no `.gitignore` e nunca será commitado!
+
+**⚠️ NUNCA** coloque tokens diretamente no código fonte.
 
 ### 3. Reiniciar o Servidor
 
